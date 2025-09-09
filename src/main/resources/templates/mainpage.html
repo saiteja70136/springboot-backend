@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon clone</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="icon" href="https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg" type="image/png">
+</head>
+<body>
+    <header class="headertag">
+        <div class="amazonimg">
+            <img class="logo" src="https://supersimple.dev/projects/amazon/images/amazon-logo-white.png" alt="logo">
+        </div>
+        <div class="searchbar">
+            <input class="searchfield" type="search" placeholder="search">
+            <button style="border: none;border-top-right-radius:10px;border-bottom-right-radius:10px; background-color:rgb(254, 189, 105); width:50px;display:flex;align-items:center;justify-content:center;"><img style="width:20px;" src="https://supersimple.dev/projects/amazon/images/icons/search-icon.png" alt=""></button>
+        </div>
+        <div class="cartreturn">
+            <div class="forreturns" style="width:60px;">Returns<br>&Orders</div>
+            <a style="color:white;text-decoration:none;" href="cartpage.html">
+                <div class="forclick" style="display:flex;position: relative;margin-right:10px; align-items: center; height:30px;">
+                    <img style="height:100%" src="https://supersimple.dev/projects/amazon/images/icons/cart-icon.png" alt="">
+                    <div style="margin-top:10px;">cart</div>
+                    <div class="cheangecount" style="height:19px; width:26px; text-align:center; color:rgb(254, 189, 105); position: absolute;left:12px;bottom:12px;">0</div>
+                </div>
+            </a>
+        </div>
+    </header>
+    <main>
+       <div class="gridlayout"></div>
+    </main>
+</body>
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+if (window.location.pathname === "/dashbordpagelogin"
+		&&urlParams.get("success") === "true") {
+	makeRequestToBackend();
+}
+async function makeRequestToBackend() {
+  try {
+    const response = await fetch('/getuserdata', {
+      method: 'GET',
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+  	  const result = await response.json();
+      console.log(result)
+  } catch (error) {
+    console.error("Error:", error);
+    alert("Something went wrong: " + error.message);
+  }
+}
+</script>
+<script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+<script type="module" src="mainpage.js"></script>
+</html>

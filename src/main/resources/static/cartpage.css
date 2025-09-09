@@ -1,0 +1,150 @@
+main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cartheaderdiv{
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    height:70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.logoamz{
+    width:100px;
+}
+.checkoutlable{
+    flex:1;
+    max-width:800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+.gridlayout{
+    margin-top:140px;
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    padding-left:10px;
+    padding-right:10px;
+}
+.cardforcart{
+    padding:18px;
+    border-width:1px;
+    border-style: solid;
+    margin-bottom:10px;
+    border-color: rgb(201,201,201);
+    border-radius:10px;
+}
+.foritems{
+    display: grid;
+    grid-template-columns:100px 275.2px 275.2px;
+}
+.amazonlogo{
+    width:150px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.lockimg{
+    width:150px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.stylefordeldiv{
+    margin-bottom:20px;
+    color: rgb(0, 118, 0);
+    font-weight: bold;
+}
+.productinfo{
+    margin-left:20px;
+}
+.forinputfield:hover{
+    cursor: pointer;
+}
+.fitems{
+    color:rgb(0, 162, 255);
+}
+.rightfied{
+    padding-left: 18px;
+    padding-top:18px;
+    padding-right:18px;
+    padding-bottom:5px;
+    border-width:1px;
+    border-style: solid;
+    border-color:rgb(201, 201, 201);
+    margin-left:10px;
+    border-radius:10px;
+}
+.itemsdivinfin{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom:10px;
+   margin-top:10px;
+}
+.shipandhanddivinfin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+.taxdivinfin{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+.esttaxdiv{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom:20px;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(201, 201, 201);
+    padding-bottom:10px;
+}
+.totalorderdiv{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-weight:bold;
+    color:red;
+    margin-bottom:20px;
+}
+.placeorderbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:30px;
+}
+.placeord{
+    height:40px;
+    width:90%;
+    border: none;
+    background-color: rgb(255, 216, 20);
+    border-radius:6px;
+    transition: background-color 0.15s;
+}
+.placeord:hover{
+    background-color: rgb(158, 134, 15);
+    cursor: pointer;
+}
+.placeord:active{
+    background-color: rgb(99, 84, 10);
+}
+.imagesec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width:100%;
+}

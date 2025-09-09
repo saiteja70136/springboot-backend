@@ -1,0 +1,133 @@
+body{
+    margin:0;
+}
+main{
+    margin-top:61px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.headertag{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    color:white;
+    position: fixed;
+    left: 0;
+    right:0;
+    top:0;
+    background-color: rgb(27, 26, 46);
+    height:60px;
+}
+.logo{
+    width:100px;
+    margin-top:10px;
+    margin-left:40px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.searchbar{
+    display:flex;
+    flex: 1;
+    max-width:779px;
+    margin-right:20px;
+    margin-left:20px;
+}
+.searchfield{
+    flex: 1;
+    padding-left:20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    height:40px;
+    border: none;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+.cartreturn{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:13px;
+}
+.gridlayout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.itemscard{
+    display: flex;
+    flex-direction: column;
+    padding-top:40px;
+    padding-left:25px;
+    padding-right:25px;
+    padding-bottom:25px;
+    border-right-width:1px;
+    border-right-style:solid;
+    border-right-color:rgb(211, 209, 209);
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(211, 209, 209);
+}
+.imgsec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:180px;
+    margin-bottom:20px;
+}
+.ratingsec{
+    display: flex;
+    align-items: center;
+    width:100px;
+    margin-top:7px;
+    margin-bottom:10px;
+}
+.pricediv{
+    font-weight: bold;
+    margin-top:10px;
+}
+.selectqnt{
+    border-width:1px;
+    border-style: solid;
+    border-color: rgb(211, 209, 209);
+    background-color: rgb(240, 240, 240);
+    height:25px;
+    width:45px;
+    border-radius:5px;
+    margin-top:10px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.15)
+}
+.addtocartsymbol{
+    display: flex;
+    width:100%;
+    height:20px;
+    margin-bottom:20px;
+}
+.addtocartbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+.addbtn{
+    width:90%;
+    height:40px;
+    border: none;
+    border-radius:10px;
+    background-color: rgb(255, 216, 20);
+    transition: background-color 0.15s;
+}
+.forreturns:hover{
+    cursor: pointer;
+}
+.addbtn:hover{
+    background-color: rgb(135, 114, 10);
+    cursor: pointer;
+}
+.addbtn:active{
+    background-color: rgb(84, 72, 8);
+}
+.itemdisc{
+    height:36.8px;
+}
+.forclick:hover{
+   cursor: pointer;
+}

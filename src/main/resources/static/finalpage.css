@@ -1,0 +1,68 @@
+body{
+    font-family: sans-serif;
+}
+.foritems{
+    display: grid;
+    grid-template-columns:100px 275.2px 200px;
+    column-gap:20px;
+    align-items: center;
+    margin:20px;
+}
+.finalorders{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagesec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+.productinfo{
+    margin-left:10px;
+}
+.cardforcart{
+    padding:10px;
+    padding-left:40px;
+    margin-top:20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(144, 144, 144);
+    border-radius:10px;
+}
+.forbutnstyling{
+    height:40px;
+    padding-left:10px;
+    padding-right:10px;
+    border: none;
+    background-color: rgb(255, 216, 20);
+    border-radius:10px;
+    transition: background-color 0.15s;
+}
+.forbutnstyling:hover{
+    background-color: rgb(142, 130, 75);
+    cursor: pointer;
+}
+.forbutnstyling:active{
+    background-color: rgb(180, 160, 60);
+}
+.gohomefunc:hover{
+    background-color: rgb(142, 130, 75);
+}
+.gohomefunc:active{
+    background-color: rgb(144, 144, 144);
+}
+.gohomefunc{
+    margin-top:10px;
+    border-radius:10px;
+    width:20%;
+    height:50px;
+    background-color: rgb(255, 216, 20);
+    border: none;
+    transition:background-color 0.15s;
+}
+.stylefordeldiv{
+	color:green;
+	font-weight:bold;
+}
